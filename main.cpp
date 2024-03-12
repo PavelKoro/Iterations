@@ -23,9 +23,11 @@ int main(int argc, char **argv) {
         arr2 = argv[2];
 
         Matrix2D A(arr1);
+        cout << "Матрица А:" << endl;
         cout << A;
         
         vector vec(arr2);
+        cout << "Вектор y:" << endl;
         cout << vec;
         cout << endl;
 
@@ -35,6 +37,7 @@ int main(int argc, char **argv) {
         if(tmp.prov(A)) {
             vector x1(size);
             x1 = tmp.urav(A, vec, EPS);
+            cout << "Вектор x1:" << endl;
             cout << x1;
             cout << endl;
 
@@ -49,16 +52,19 @@ int main(int argc, char **argv) {
         size = 4;
         Matrix2D A(size);
         A.fill();
+        cout << "Матрица А:" << endl;
         cout << A;
 
         vector vec(size);
         vec.fill();
+        cout << "Вектор y:" << endl;
         cout << vec;
         cout << endl;
 
         iterat tmp(size);
         vector x1(size);
         x1 = tmp.urav(A, vec, EPS);
+        cout << "Вектор x1: ";
         cout << x1;
         cout << endl;
 

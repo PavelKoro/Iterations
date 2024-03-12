@@ -16,7 +16,9 @@ vector iterat::urav(Matrix2D A, vector y, double EPS) {
     CorrecVec_z(z, A);
     double q = ratio(C);
 
+    printf("Матрица С:\n");
     C.print();
+    printf("Вектор z:\n");
     z.print();
     printf(" α = %f\n\n", q);
     
