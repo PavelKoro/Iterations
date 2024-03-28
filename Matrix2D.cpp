@@ -89,7 +89,6 @@ double Matrix2D::sum_strok(int i) {
 }
 
 vector Matrix2D::mult(Matrix2D C, vector &y) {
-    // vector copy = y;
     vector r(n);
     for(int i=0; i<n; i++) {
         for(int j=0; j<n; j++) {
@@ -111,7 +110,6 @@ void Matrix2D::print() {
 
 vector Matrix2D::operator*(vector &y) {
     vector copy = y;
-    
     copy = mult((*this), copy);
     return copy;
 }

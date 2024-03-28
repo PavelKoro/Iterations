@@ -20,7 +20,7 @@
 *Для запуска программы небходимо:*
 
 1. `make`
-2. `./main matr/A.txt matr/y.txt`
+2. `./main`
 3. *Вывод →*
 
 ![Untitled](img/urav1.png)

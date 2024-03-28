@@ -128,7 +128,7 @@ bool vector::operator!=(const vector &other) {
 }
 
 double& vector::operator[](int i) {
-    return vec[i]; // data + n*i
+    return vec[i];
 }
 
 ostream &operator<<(ostream &out, vector &other) {
